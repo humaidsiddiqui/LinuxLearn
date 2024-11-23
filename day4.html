@@ -1,0 +1,31 @@
+grep command is used to search for a partricular string / word in a text file
+similar to "Ctrl+F" but executed via a CLI
+$ grep options file1.txt //returns results for matching string options
+$ grep -i options file1.txt //returns the rsults for case senstive strings
+$ grep -n options file1.txt // returns the matching strings along with their line number 
+$ grep - v options file1.txt //returns the result of lines not matching the search strings
+$ grep -c options file1.txt // returns the number of lines in which the results match string 
+ Working with Sort Commands
+ we use sort command to sort the results of a search either aplhabetically or numerically
+ $ sort file1.txt // sorts the content of file1.txt and returns them in aplabhetic order
+ $ sort file1.txt file2 // sorts the contents of both file1.txt & file2.txt
+ $sort -r file1.txt // flag returns in reverse order
+ $sort -f file1 // case insensitive sorting -n results asper numerical order
+ Working with Pipe "|" command
+ it is used to output the result of one command as input to another
+ "|" are used to perform two operations in same command
+ $ grep dh File1.txt Filex2.txt | sort // searches for string dh from both files and sorts the results
+ $ grep dh File1.txt Filex2.txt | sort - //reverse order
+
+ Working with Files & Directories : "cp" Command 
+ $ cp [ options ] source destination
+ $cp command is used to copy files and instructions
+ cp -i enters interactive mode , CLI asks before overwriting Files
+ cp -n doesn't overwrite
+ cp -u updates destination file only when source file is different from  destination file
+ cp -R recursive copy, C oppies even hidden files
+ cp - v verbose, prints informative messages
+ $ mv [options] source destination
+ mv this command is used to move files and direction
+ mv -i "interactive" mv -u "updates destination files" mv -v "verbose print source and destination file"
+ 
