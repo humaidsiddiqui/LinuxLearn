@@ -1,0 +1,11 @@
+Working with user permissions on linux 
+cdmod: To Change the access permissions of files and directories
+chown: to change the owner of files and directories
+chgrp: To change the group ownership of file and directories
+
+COMMANDS:
+chmod g+wx filename : this gives write and execute permissions to group members
+chmod u=rwx,0-wx filename : This gives read write and execute permissions to owners and removes the write and execute ownerships from others
+chown usrename filename : changes owner of specified file 
+chown username: groupname filename : changes both the owner and group ownershipof specified file
+chgrp groupname filename : changes the group ownership of specified file.
