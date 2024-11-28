@@ -21,3 +21,14 @@ $ sudo userdel -g group-name user-name // adding a user to a primary group
 
 SSH (secure shell) For Remote Machine access
 service iptables stop //Drops Ip Table
+$sudo chkconfig iptables off // permanently disables the IP table
+
+sudo gedit /etc/hosts // Add the below IP Add resses in both the master and slave's host file1
+master 192.168.56.102
+slave 192.168.56.103
+$ ip addr show// To Show the ip addr
+$sudo ip addr del ip-address dev ethq //Deleting existing IP
+$sudo ip addr add 192.168.56.102 dev eth1 // Adding IP at the Master's node
+$sudo ip addr add 192.168.56.103 dev eth1 // Adding IP at the slave node
+
+
